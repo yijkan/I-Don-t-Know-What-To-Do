@@ -11,7 +11,7 @@ $(document).ready(function() {
 	$("#random").click(function() {
 		var randnum = Math.floor((Math.random()* randomideas.length));
 		var randomidea = randomideas[randnum];
-		document.getElementById("#suggestion").innerHTML = randomidea;
+		document.getElementById("suggestion").innerHTML = randomidea;
 		
 	})
 })

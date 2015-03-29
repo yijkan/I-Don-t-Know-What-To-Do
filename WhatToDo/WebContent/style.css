@@ -24,10 +24,7 @@ a {
 	text-decoration: none;
 	color:black;
 }
-a.sugg {
-	color:blue;
-}
-a.sugg:hover {
+a:hover {
 	text-decoration: underline;
 }
 #suggestion { /* The div containing the suggestion */

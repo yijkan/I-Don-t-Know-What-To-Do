@@ -14,7 +14,8 @@
 		<h2>Add your own suggestion</h2>
 
 		<% if(DatabaseMgr.add(request.getParameter("sugg"), request.getParameter("link"), request.getParameter("cat"))) {%>
-			<div>Thank you! Your suggestion has been added</div>
+			<div>Thank you! Your suggestion has been added.</div>
+			<div><a href="add.html">Click here to add another one.</a></div>
 		<% } else { %>
 			<div>Sorry. Something went wrong. <a href="add.html">Try again?</a></div>
 		<%} %>

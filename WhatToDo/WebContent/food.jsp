@@ -7,18 +7,32 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
 	<title>I Don't Know What To Do</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-	<div><h1>I Don't Know What To Do</h1></div>
+	<a href="index.html"><h1>I Don't Know What To Do</h1></a>
 	
 	<div id="suggestion"><%= DatabaseMgr.food() %></div>
 	
 	<div id="directions">Click again to get another random suggestion</div>
-	<a href="random.jsp"><button type="button" id="random">Generate Random Activity</button></a>
+	<div><a href="random.jsp"><img src="images/random.png"/></a></div>
+	
 	<div>Or choose a category</div>
-	<a href="learn.jsp"><button type="button" id="learn">Learn something new</button></a>
-	<a href="food.jsp"><button type="button" id="food">Cook something</button></a>
-	<a href="misc.jsp"><button type="button" id="misc">Miscellaneous</button></a>
+		<div class="button">&nbsp;</div> <!-- this is a placeholder -->
+		<div class="button"><a href="learn.jsp">
+			Learn something new<br>
+			<img src="images/learn.png"/>
+		</a></div>
+		<div class="button"><a href="food.jsp">
+			Cook something<br>
+			<img src="images/food.png"/>
+		</a></div>
+		<div class="button"><a href="misc.jsp">
+			Miscellaneous<br>
+			<img src="images/misc.png"/>
+		</a></div>
+
+		<div style="clear:both;"><a href="add.html">Click here to add your own suggestion</a></div>
 </body>
 </html>

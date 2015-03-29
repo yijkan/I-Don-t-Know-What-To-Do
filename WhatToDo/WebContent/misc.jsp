@@ -34,5 +34,6 @@
 		</a></div>
 
 		<div style="clear:both;"><a href="add.html">Click here to add your own suggestion</a></div>
+		<div id="credit">Created by Yijin Kang, Michelle Kang, and Tim Chow at hackBCA II</div>
 </body>
 </html>

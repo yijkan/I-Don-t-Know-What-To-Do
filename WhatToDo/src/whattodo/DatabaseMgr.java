@@ -159,7 +159,7 @@ public class DatabaseMgr {
 			PreparedStatement p = conn.prepareStatement("INSERT INTO Suggestions (Suggestion, Category) VALUES (?,?)");
 			String suggestion = null;
 			if (link != null) {
-				suggestion = "<a href='" + link + "' class='sugg'>" + sugg + "</a>";
+				suggestion = "<a href='" + link + "' target='_blank'>" + sugg + "</a>";
 			} else {
 				suggestion = sugg;
 			}

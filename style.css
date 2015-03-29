@@ -18,6 +18,9 @@ a{
 #suggestion { /* The div containing the suggestion */
 
 }
+.button {
+	float:left;
+}
 
 button{
 

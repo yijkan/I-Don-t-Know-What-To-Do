@@ -28,29 +28,28 @@ $(document).ready(function() {
 		var randnum = Math.floor(Math.random()* random.length);
 		var randomidea = random[randnum];
 		document.getElementById("suggestion").innerHTML = randomidea;
-		document.getElementById("directions").innerHTML = "Click again to get another suggestion";
 	})
 	
 	$("#learn").click(function() {
 		var randnum = Math.floor(Math.random()* learn.length);
 		var randomidea = learn[randnum];
-		document.getElementById("suggestion").innerHTML = randomidea;
-		document.getElementById("directions").innerHTML = "Click again to get another suggestion";	
+		document.getElementById("suggestion").innerHTML = randomidea;	
 	})
 	
 	$("#food").click(function() {
 		var randnum = Math.floor(Math.random()* food.length);
 		var randomidea = food[randnum];
 		document.getElementById("suggestion").innerHTML = randomidea;
-		document.getElementById("directions").innerHTML = "Click again to get another suggestion";
 	})
 	
 	$("#misc").click(function() {
 		var randnum = Math.floor(Math.random()* misc.length);
 		var randomidea = misc[randnum];
 		document.getElementById("suggestion").innerHTML = randomidea;
-		document.getElementById("directions").innerHTML = "Click again to get another suggestion";
 	})
 
+	$(".button").click(function() {
+		document.getElementById("directions").innerHTML = "Click again to get another suggestion";	
+	})
 
 })

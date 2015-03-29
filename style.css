@@ -30,8 +30,9 @@ body {
     background: -moz-linear-gradient(lightgreen, white, lightblue); /* For Firefox 3.6 to 15 */
     background: linear-gradient(lightgreen, white, lightblue); /* Standard syntax (must be last) */
 }
-.button {
-	float:left;
+
+table{
+	
 }
 
 button{

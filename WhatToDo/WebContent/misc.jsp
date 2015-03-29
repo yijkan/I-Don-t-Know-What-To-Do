@@ -15,10 +15,10 @@
 	
 	<div id="suggestion"><%= DatabaseMgr.misc() %></div>
 	
-	<div id="directions">Click again to get another random suggestion</div>
+	<h2 id="directions">Click again to get another random suggestion</h2>
 	<div><a href="random.jsp"><img src="images/random.png"/></a></div>
 	
-	<div>Or choose a category</div>
+	<h2>Or choose a category</h2>
 		<div class="button">&nbsp;</div> <!-- this is a placeholder -->
 		<div class="button"><a href="learn.jsp">
 			Learn something new<br>

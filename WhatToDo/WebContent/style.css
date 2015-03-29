@@ -1,29 +1,40 @@
-*{
+* {
 	text-align: center;
 	font-family: 'Raleway', Sans-serif;
 	font-size:24px;
 }
-body{
+body {
 	background: -webkit-linear-gradient(lightgreen, white, lightblue); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(lightgreen, white, lightblue); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(lightgreen, white, lightblue); /* For Firefox 3.6 to 15 */
     background: linear-gradient(lightgreen, white, lightblue); /* Standard syntax (must be last) */
 }
-h1{
-	font-size: 72px;
+h1 {
+	font-size: 60px;
 	padding-top: 20px;
 }
-.button{
+h2 {
+	font-size:30px;
+}
+.button {
 	width:20%;
 	float:left;
 }
-a{
+a {
 	text-decoration: none;
 	color:black;
 }
 a.sugg {
 	color:blue;
 }
+a.sugg:hover {
+	text-decoration: underline;
+}
 #suggestion { /* The div containing the suggestion */
 
+}
+#credit {
+	margin-top:30px;
+	font-size:18px;
+	color: gray;
 }

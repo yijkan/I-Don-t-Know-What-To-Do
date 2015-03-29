@@ -10,10 +10,19 @@ CREATE TABLE IF NOT EXISTS `Suggestions` (
 );
 
 INSERT INTO Suggestions (Suggestion, Category)
-VALUES ("<a href = 'http://www.tropicalmba.com/learn-to-play-guitar/'>learn how to play guitar</a>", 2);
+VALUES ("<a href = 'http://www.tropicalmba.com/learn-to-play-guitar/'>Learn how to play guitar</a>", 2);
 
 INSERT INTO Suggestions (Suggestion, Category)
-VALUES ("<a href = 'http://www.auntiepixelante.com/twine/''>learn how to make interactive stories with the free program Twine</a>", 2);
+VALUES ("<a href = 'https://www.duolingo.com/'>Learn another language</a>", 2);
 
 INSERT INTO Suggestions (Suggestion, Category)
-VALUES ("<a href = 'https://www.duolingo.com/''>learn another language</a>", 2)
+VALUES ('<a href=”http://codecademy.com”>Learn how to code</a>', 2);
+
+INSERT INTO Suggestions (Suggestion, Category)
+VALUES ('<a href=”http://freerice.com”>Learn vocabulary and do good with freerice.com</a>', 2);
+
+INSERT INTO Suggestions (Suggestion, Category)
+VALUES ('<a href=”http://sublimestitching.com/pages/tutorials”>Learn how to embroider</a>', 2);
+
+INSERT INTO Suggestions (Suggestion, Category)
+VALUES ('<a href=”http://howset.com/cat/how-to-make-origami/#.VRc15PnF-Cl”>Learn how to do origami</a>', 2);

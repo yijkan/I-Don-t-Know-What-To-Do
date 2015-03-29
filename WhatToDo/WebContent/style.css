@@ -1,18 +1,19 @@
 *{
 	text-align: center;
 	font-family: Helvetica, Sans-serif;
+	font-size:24px;
 }
 h1{
 	font-size: 72px;
 	padding-top: 20px;
 }
 .button{
-	font-size: 24px;
+	width:20%;
+	float:left;
 }
 a{
 	text-decoration: none;
 	color: blue;
-	background-color:red;
 }
 #suggestion { /* The div containing the suggestion */
 

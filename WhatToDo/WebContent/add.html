@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<title>I Don't Know What To Do | Add Suggestion</title>
+	</head>
+	<body>
+		<a href="index.html"><div><h1>I Don't Know What To Do</h1></div></a>
+		<h2>Add your own suggestion</h2>
+
+		<form action="new.jsp">
+			Suggestion: <input type="text" name="sugg"><br>
+			Link (optional): <input type="text" name="link"><br>
+			Category: <select name="cat">
+				<option value="" disabled selected style='display:none;'>Choose a category</option>
+				<option value="learn">Learn something new</option>
+				<option value="food">Cook something</option>
+				<option value="misc">Miscellaneous</option>
+			</select><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

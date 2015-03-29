@@ -19,7 +19,10 @@ h1{
 }
 a{
 	text-decoration: none;
-	color: blue;
+	color:black;
+}
+a.sugg {
+	color:blue;
 }
 #suggestion { /* The div containing the suggestion */
 

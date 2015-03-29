@@ -20,8 +20,8 @@ public class DatabaseMgr {
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/What_To_Do";
 		String userName = "root";
-		String password = "Z7jp79LBMV"; // for the server
-//		String password = "";
+//		String password = "Z7jp79LBMV"; // for the server
+		String password = "";
 		final int connectionsCount = 10;
 		
 		try{
@@ -94,7 +94,7 @@ public class DatabaseMgr {
 		Connection conn = getConnection();
 		String sugg = null;
 		try {
-			PreparedStatement p = conn.prepareStatement("SELECT Suggestion FROM Suggestions WHERE Category=2 ORDER BY RAND() LIMIT 1");
+			PreparedStatement p = conn.prepareStatement("SELECT Suggestion FROM Suggestions WHERE Category=0 ORDER BY RAND() LIMIT 1");
 			ResultSet rs = p.executeQuery();
 			if(rs.next()) {
 				sugg = rs.getString("Suggestion");
@@ -136,7 +136,7 @@ public class DatabaseMgr {
 		Connection conn = getConnection();
 		String sugg = null;
 		try {
-			PreparedStatement p = conn.prepareStatement("SELECT Suggestion FROM Suggestions WHERE Category=0 ORDER BY RAND() LIMIT 1");
+			PreparedStatement p = conn.prepareStatement("SELECT Suggestion FROM Suggestions WHERE Category=2 ORDER BY RAND() LIMIT 1");
 			ResultSet rs = p.executeQuery();
 			if(rs.next()) {
 				sugg = rs.getString("Suggestion");
@@ -151,5 +151,45 @@ public class DatabaseMgr {
 			returnConnection(conn);
 		}
 		return sugg;
+	}
+	
+	public static boolean add(String sugg, String link, String cat) {
+		Connection conn = getConnection();
+		try {
+			PreparedStatement p = conn.prepareStatement("INSERT INTO Suggestions (Suggestion, Category) VALUES (?,?)");
+			String suggestion = null;
+			if (link != null) {
+				suggestion = "<a href='" + link + "' class='sugg'>" + sugg + "</a>";
+			} else {
+				suggestion = sugg;
+			}
+			
+			System.out.println(suggestion);
+			p.setString(1, suggestion);
+			
+			int category = -1;
+			switch(cat) {
+				case "learn":
+					category = 0;
+					break;
+				case "food":
+					category = 1;
+					break;
+				case "misc":
+					category = 2;
+					break;
+			}
+			System.out.println(category);
+			p.setInt(2, category);
+			p.execute();
+			p.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		} finally {
+			returnConnection(conn);
+		}
+		
+		return true;
 	}
 }

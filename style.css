@@ -11,3 +11,10 @@ button{
 	font-size: 36px;
 	padding: 10px;
 }
+a{
+	text-decoration: none;
+	color: blue;
+}
+#suggestion { /* The div containing the suggestion */
+
+}
